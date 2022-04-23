@@ -1,0 +1,484 @@
+超星去端魔法
+http://i.chaoxing.com/base?t=1581331415571
+20170137
+s654321
+
+wujian016
+nd2x8fs8
+
+香港主机
+wujian017
+ppn684m3
+
+10.16.84.127
+
+ap.connect.newegg.cn
+tw.connect.newegg.net 
+
+gw.neweggservice.com（推荐）
+gw.neweggservice.cn  (faster)
+webvpn.newegg.org
+webvpn.newegg.cn
+
+选课：
+510302201002222812
+000000
+zf t;.
+安全：
+wusongtan
+Wjgdcwst123
+
+17xueba.com
+13982086402
+wjgdcwst123
+
+安全教育平台：
+吴宣仪
+Wjgdcwst123
+
+思：
+user: 13982086402
+pwd: wusongtan222
+
+
+set FLASK_APP=microblog.py
+set FLASK_DEBUG=1
+flask run
+
+
+证： @Wj918311
+
+MAIL_SERVER=stmp.163.com
+MAIL_PORT=25
+MAIL_USE_TLS=True
+MAIL_USE_SSL=False
+MAIL_USERNAME=roscoewu@163.com
+MAIL_PASSWORD=wj1976
+
+
+SET MAIL_SERVER=stmp.163.com
+SET MAIL_PORT=465
+SET MAIL_USE_SSL = True
+SET MAIL_USERNAME=roscoewu@163.com
+SET MAIL_PASSWORD=Wj00001688
+
+MAIL_SERVER=smtp.sina.com
+MAIL_PORT=587
+MAIL_USE_TLS=False
+MAIL_USE_SSL=True
+MAIL_USERNAME=roscoewu@sina.com
+MAIL_PASSWORD=48dd14999275f30e 
+
+from flask_mail import Message
+from app import mail
+msg = Message('my subject', sender='roscoe admin<roscoewu@sina.com>',recipients=['roscoewu@163.com','happy@eiyi.com'])
+msg.body = 'hi are your body'
+msg.html = '<h1>HTML body</h1>'
+mail.send(msg)
+
+
+from flask_mail import Message
+from app import mail
+msg = Message('my subject', sender='roscoewu@163.com',recipients=['wujian016@163.com'])
+msg.body = 'hi are your body'
+msg.html = '<h1>HTML body</h1>'
+mail.send(msg)
+
+pornhub
+theporndude
+transgender?o=mv&t=t&cc=us
+
+
+删除所有状态为退出的docker(https://bingohuang.com/docker-ps/)
+docker rm $(docker ps -f status=exited -q)
+删除所有作废的image
+docker rmi $(docker images -f "dangling=true" -q)
+
+删除所有停止的docker,连同它的volumn
+docker rm -v $(docker ps -a -q)
+
+
+上传到阿里去镜像：
+docker tag [ImageId] rregistry.cn-chengdu.aliyuncs.com/wujian016/test2:v1
+docker push registry.cn-chengdu.aliyuncs.com/wujian016/test2:v1
+
+
+
+docker run --name blog2 -d -p 5000 --rm -e SECRET_KEY=my-secret-key -e MAIL_SERVER=smtp.sina.com -e MAIL_PORT=587 -e MAIL_USE_TLS=False -e MAIL_USE_SSL=True -e MAIL_USERNAME=roscoewu@sina.com -e MAIL_PASSWORD=48dd14999275f30e     wujian016/blog2:latest
+docker build -t wujian016/blog2 .
+
+docker run -dit --restart=always --name asp-mysql  -p 13306:3306  -e MYSQL_ROOT_PASSWORD=123456 mysql:latest --character-set-server=utf8  
+
+docker run -dit --restart=always --name asp-mysql  -p 13306:3306 -e RANDOM_ROOT_PASSWORD=yes -e MYSQL_DATABASE=malldb -e MYSQL_USER=rosce  -e MYSQL_PASSWORD=123456  mysql:latest
+
+
+docker run -dit --restart=always --name mariadb -v /home/gman/mariadb-data/human:/var/lib/mysql -p 3308:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=human mariadb:latest
+
+
+docker run -dit --restart=always --name nuget-server -p 5555:80 --env-file baget.env -v "$(pwd)/baget-data:/var/baget" loicsharma/baget:latest
+
+
+sudo nmcli connection reload #重载网卡配置
+超星去端魔法
+http://i.chaoxing.com/base?t=1581331415571
+20170137
+s654321
+
+wujian016
+nd2x8fs8
+
+香港主机
+wujian017
+ppn684m3
+
+10.16.84.127
+
+ap.connect.newegg.cn
+tw.connect.newegg.net 
+
+gw.neweggservice.com（推荐）
+gw.neweggservice.cn  (faster)
+webvpn.newegg.org
+webvpn.newegg.cn
+
+选课：
+510302201002222812
+000000
+zf t;.
+安全：
+wusongtan
+Wjgdcwst123
+
+17xueba.com
+13982086402
+wjgdcwst123
+
+安全教育平台：
+吴宣仪
+Wjgdcwst123
+
+思：
+user: 13982086402
+pwd: wusongtan222
+
+
+set FLASK_APP=microblog.py
+set FLASK_DEBUG=1
+flask run
+
+
+证： @Wj918311
+
+MAIL_SERVER=stmp.163.com
+MAIL_PORT=25
+MAIL_USE_TLS=True
+MAIL_USE_SSL=False
+MAIL_USERNAME=roscoewu@163.com
+MAIL_PASSWORD=wj1976
+
+
+SET MAIL_SERVER=stmp.163.com
+SET MAIL_PORT=465
+SET MAIL_USE_SSL = True
+SET MAIL_USERNAME=roscoewu@163.com
+SET MAIL_PASSWORD=Wj00001688
+
+MAIL_SERVER=smtp.sina.com
+MAIL_PORT=587
+MAIL_USE_TLS=False
+MAIL_USE_SSL=True
+MAIL_USERNAME=roscoewu@sina.com
+MAIL_PASSWORD=48dd14999275f30e 
+
+from flask_mail import Message
+from app import mail
+msg = Message('my subject', sender='roscoe admin<roscoewu@sina.com>',recipients=['roscoewu@163.com','happy@eiyi.com'])
+msg.body = 'hi are your body'
+msg.html = '<h1>HTML body</h1>'
+mail.send(msg)
+
+
+from flask_mail import Message
+from app import mail
+msg = Message('my subject', sender='roscoewu@163.com',recipients=['wujian016@163.com'])
+msg.body = 'hi are your body'
+msg.html = '<h1>HTML body</h1>'
+mail.send(msg)
+
+pornhub
+theporndude
+transgender?o=mv&t=t&cc=us
+
+
+删除所有状态为退出的docker(https://bingohuang.com/docker-ps/)
+docker rm $(docker ps -f status=exited -q)
+删除所有作废的image
+docker rmi $(docker images -f "dangling=true" -q)
+
+删除所有停止的docker,连同它的volumn
+docker rm -v $(docker ps -a -q)
+
+
+上传到阿里去镜像：
+docker tag [ImageId] rregistry.cn-chengdu.aliyuncs.com/wujian016/test2:v1
+docker push registry.cn-chengdu.aliyuncs.com/wujian016/test2:v1
+
+
+
+docker run --name blog2 -d -p 5000 --rm -e SECRET_KEY=my-secret-key -e MAIL_SERVER=smtp.sina.com -e MAIL_PORT=587 -e MAIL_USE_TLS=False -e MAIL_USE_SSL=True -e MAIL_USERNAME=roscoewu@sina.com -e MAIL_PASSWORD=48dd14999275f30e     wujian016/blog2:latest
+docker build -t wujian016/blog2 .
+
+docker run -dit --restart=always --name asp-mysql  -p 13306:3306  -e MYSQL_ROOT_PASSWORD=123456 mysql:latest --character-set-server=utf8  
+
+docker run -dit --restart=always --name asp-mysql  -p 13306:3306 -e RANDOM_ROOT_PASSWORD=yes -e MYSQL_DATABASE=malldb -e MYSQL_USER=rosce  -e MYSQL_PASSWORD=123456  mysql:latest
+
+
+docker run -dit --restart=always --name mariadb -v /home/gman/mariadb-data/human:/var/lib/mysql -p 3308:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=human mariadb:latest
+
+
+docker run -dit --restart=always --name nuget-server -p 5555:80 --env-file baget.env -v "$(pwd)/baget-data:/var/baget" loicsharma/baget:latest
+
+
+sudo nmcli connection reload #重载网卡配置
+超星去端魔法
+http://i.chaoxing.com/base?t=1581331415571
+20170137
+s654321
+
+wujian016
+nd2x8fs8
+
+香港主机
+wujian017
+ppn684m3
+
+10.16.84.127
+
+ap.connect.newegg.cn
+tw.connect.newegg.net 
+
+gw.neweggservice.com（推荐）
+gw.neweggservice.cn  (faster)
+webvpn.newegg.org
+webvpn.newegg.cn
+
+选课：
+510302201002222812
+000000
+zf t;.
+安全：
+wusongtan
+Wjgdcwst123
+
+17xueba.com
+13982086402
+wjgdcwst123
+
+安全教育平台：
+吴宣仪
+Wjgdcwst123
+
+思：
+user: 13982086402
+pwd: wusongtan222
+
+
+set FLASK_APP=microblog.py
+set FLASK_DEBUG=1
+flask run
+
+
+证： @Wj918311
+
+MAIL_SERVER=stmp.163.com
+MAIL_PORT=25
+MAIL_USE_TLS=True
+MAIL_USE_SSL=False
+MAIL_USERNAME=roscoewu@163.com
+MAIL_PASSWORD=wj1976
+
+
+SET MAIL_SERVER=stmp.163.com
+SET MAIL_PORT=465
+SET MAIL_USE_SSL = True
+SET MAIL_USERNAME=roscoewu@163.com
+SET MAIL_PASSWORD=Wj00001688
+
+MAIL_SERVER=smtp.sina.com
+MAIL_PORT=587
+MAIL_USE_TLS=False
+MAIL_USE_SSL=True
+MAIL_USERNAME=roscoewu@sina.com
+MAIL_PASSWORD=48dd14999275f30e 
+
+from flask_mail import Message
+from app import mail
+msg = Message('my subject', sender='roscoe admin<roscoewu@sina.com>',recipients=['roscoewu@163.com','happy@eiyi.com'])
+msg.body = 'hi are your body'
+msg.html = '<h1>HTML body</h1>'
+mail.send(msg)
+
+
+from flask_mail import Message
+from app import mail
+msg = Message('my subject', sender='roscoewu@163.com',recipients=['wujian016@163.com'])
+msg.body = 'hi are your body'
+msg.html = '<h1>HTML body</h1>'
+mail.send(msg)
+
+pornhub
+theporndude
+transgender?o=mv&t=t&cc=us
+
+
+删除所有状态为退出的docker(https://bingohuang.com/docker-ps/)
+docker rm $(docker ps -f status=exited -q)
+删除所有作废的image
+docker rmi $(docker images -f "dangling=true" -q)
+
+删除所有停止的docker,连同它的volumn
+docker rm -v $(docker ps -a -q)
+
+
+上传到阿里去镜像：
+docker tag [ImageId] rregistry.cn-chengdu.aliyuncs.com/wujian016/test2:v1
+docker push registry.cn-chengdu.aliyuncs.com/wujian016/test2:v1
+
+
+
+docker run --name blog2 -d -p 5000 --rm -e SECRET_KEY=my-secret-key -e MAIL_SERVER=smtp.sina.com -e MAIL_PORT=587 -e MAIL_USE_TLS=False -e MAIL_USE_SSL=True -e MAIL_USERNAME=roscoewu@sina.com -e MAIL_PASSWORD=48dd14999275f30e     wujian016/blog2:latest
+docker build -t wujian016/blog2 .
+
+docker run -dit --restart=always --name asp-mysql  -p 13306:3306  -e MYSQL_ROOT_PASSWORD=123456 mysql:latest --character-set-server=utf8  
+
+docker run -dit --restart=always --name asp-mysql  -p 13306:3306 -e RANDOM_ROOT_PASSWORD=yes -e MYSQL_DATABASE=malldb -e MYSQL_USER=rosce  -e MYSQL_PASSWORD=123456  mysql:latest
+
+
+docker run -dit --restart=always --name mariadb -v /home/gman/mariadb-data/human:/var/lib/mysql -p 3308:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=human mariadb:latest
+
+
+docker run -dit --restart=always --name nuget-server -p 5555:80 --env-file baget.env -v "$(pwd)/baget-data:/var/baget" loicsharma/baget:latest
+
+
+sudo nmcli connection reload #重载网卡配置
+超星去端魔法
+http://i.chaoxing.com/base?t=1581331415571
+20170137
+s654321
+
+wujian016
+nd2x8fs8
+
+香港主机
+wujian017
+ppn684m3
+
+10.16.84.127
+
+ap.connect.newegg.cn
+tw.connect.newegg.net 
+
+gw.neweggservice.com（推荐）
+gw.neweggservice.cn  (faster)
+webvpn.newegg.org
+webvpn.newegg.cn
+
+选课：
+510302201002222812
+000000
+zf t;.
+安全：
+wusongtan
+Wjgdcwst123
+
+17xueba.com
+13982086402
+wjgdcwst123
+
+安全教育平台：
+吴宣仪
+Wjgdcwst123
+
+思：
+user: 13982086402
+pwd: wusongtan222
+
+
+set FLASK_APP=microblog.py
+set FLASK_DEBUG=1
+flask run
+
+
+证： @Wj918311
+
+MAIL_SERVER=stmp.163.com
+MAIL_PORT=25
+MAIL_USE_TLS=True
+MAIL_USE_SSL=False
+MAIL_USERNAME=roscoewu@163.com
+MAIL_PASSWORD=wj1976
+
+
+SET MAIL_SERVER=stmp.163.com
+SET MAIL_PORT=465
+SET MAIL_USE_SSL = True
+SET MAIL_USERNAME=roscoewu@163.com
+SET MAIL_PASSWORD=Wj00001688
+
+MAIL_SERVER=smtp.sina.com
+MAIL_PORT=587
+MAIL_USE_TLS=False
+MAIL_USE_SSL=True
+MAIL_USERNAME=roscoewu@sina.com
+MAIL_PASSWORD=48dd14999275f30e 
+
+from flask_mail import Message
+from app import mail
+msg = Message('my subject', sender='roscoe admin<roscoewu@sina.com>',recipients=['roscoewu@163.com','happy@eiyi.com'])
+msg.body = 'hi are your body'
+msg.html = '<h1>HTML body</h1>'
+mail.send(msg)
+
+
+from flask_mail import Message
+from app import mail
+msg = Message('my subject', sender='roscoewu@163.com',recipients=['wujian016@163.com'])
+msg.body = 'hi are your body'
+msg.html = '<h1>HTML body</h1>'
+mail.send(msg)
+
+pornhub
+theporndude
+transgender?o=mv&t=t&cc=us
+
+
+删除所有状态为退出的docker(https://bingohuang.com/docker-ps/)
+docker rm $(docker ps -f status=exited -q)
+删除所有作废的image
+docker rmi $(docker images -f "dangling=true" -q)
+
+删除所有停止的docker,连同它的volumn
+docker rm -v $(docker ps -a -q)
+
+
+上传到阿里去镜像：
+docker tag [ImageId] rregistry.cn-chengdu.aliyuncs.com/wujian016/test2:v1
+docker push registry.cn-chengdu.aliyuncs.com/wujian016/test2:v1
+
+
+
+docker run --name blog2 -d -p 5000 --rm -e SECRET_KEY=my-secret-key -e MAIL_SERVER=smtp.sina.com -e MAIL_PORT=587 -e MAIL_USE_TLS=False -e MAIL_USE_SSL=True -e MAIL_USERNAME=roscoewu@sina.com -e MAIL_PASSWORD=48dd14999275f30e     wujian016/blog2:latest
+docker build -t wujian016/blog2 .
+
+docker run -dit --restart=always --name asp-mysql  -p 13306:3306  -e MYSQL_ROOT_PASSWORD=123456 mysql:latest --character-set-server=utf8  
+
+docker run -dit --restart=always --name asp-mysql  -p 13306:3306 -e RANDOM_ROOT_PASSWORD=yes -e MYSQL_DATABASE=malldb -e MYSQL_USER=rosce  -e MYSQL_PASSWORD=123456  mysql:latest
+
+
+docker run -dit --restart=always --name mariadb -v /home/gman/mariadb-data/human:/var/lib/mysql -p 3308:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=human mariadb:latest
+
+
+docker run -dit --restart=always --name nuget-server -p 5555:80 --env-file baget.env -v "$(pwd)/baget-data:/var/baget" loicsharma/baget:latest
+
+
+sudo nmcli connection reload #重载网卡配置
