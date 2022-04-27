@@ -38,6 +38,7 @@
 #include "IntCompare.h"
 #include "SmallInt.h"
 #include "Quote.h"
+#include "Basker.h"
 
 using namespace std;
 
@@ -47,13 +48,13 @@ struct NoDerived {
 	}
 };
 struct Base : NoDerived {
-	int f1(int s = 10) const override{
+	int f1(int s = 10) const override {
 		return 2 + NoDerived::f1(s);
 	}
-}; 
+};
 
 class Animal {
-public :
+public:
 	void show();
 protected:
 	int prot_mem;
@@ -65,7 +66,7 @@ class Sneaky : private Animal {
 	friend void clobber(Sneaky&);
 	friend void clobber(Animal&);
 public:
-	void test(){};
+	void test() {};
 private:
 	int j;
 protected:
@@ -78,7 +79,7 @@ void fun(Sneaky& s) {
 }
 
 void clobber(Sneaky& s) {
-	s.j = s.prot_mem = s.x = 0; 
+	s.j = s.prot_mem = s.x = 0;
 }
 void clobber(Animal& b) {
 	//b.i = 3;
@@ -101,7 +102,7 @@ private:
 	int prt_mem = 0;
 };
 
-class Anl:public BaseAnl {
+class Anl :public BaseAnl {
 public:
 	using BaseAnl::prot_mem;
 protected:
@@ -122,8 +123,8 @@ public:
 	}
 };
 
-struct B1 { 
-	B1() :mem(0){}
+struct B1 {
+	B1() :mem(0) {}
 	void memfcn() {
 		cout << "b1" << endl;
 	}
@@ -135,7 +136,7 @@ protected:
 };
 
 struct B2 : B1 {
-	B2(int i):mem(i){}
+	B2(int i) :mem(i) {}
 	int get_mem() { return mem; }
 	void memfcn() {
 		cout << "b2" << endl;
@@ -151,20 +152,35 @@ protected:
 	int mem;
 };
 
+void PassQuote(Bulk_quote bq) {
+	cout << "PassQuote" << endl;
+}
+
 int main(int argc, char* argv[])
-{  /*
-	B1 b1;
-	B2 b2(42);
-	B1* p1 = &b1;
-	B2* p2 = &b2;*/
-	//b1.memfcn();
-	//b2.memfcn("ss");
-	//b2.B1::memfcn();
-	//b2.memfcn();
-	//p1 = new B1;
-	B1* p1 = new B2(22);
-	//delete p1;
-	delete p1;
+{
+	//vector<shared_ptr<Quote>> vec;
+	//vec.push_back(make_shared<Quote>("bk3", 20));
+	//vec.push_back(make_shared<Bulk_quote>("bk2", 22, 33, 44));
+	//vec.push_back(make_shared<Bulk_quote>("bk1", 2, 3, 4));
+
+	//cout << vec.back()->net_price(15) << endl;
+	//cout << bq.net_price(15) << endl;
+
+	Basker bask;
+	Quote bk3("bk3", 20);
+	Bulk_quote bk2("bk2", 2, 3, 2);
+	bask.add_item(bk2);
+	bask.add_item(bk2);
+	bask.add_item(bk2);
+	bask.add_item(bk2);
+	bask.add_item(bk3);
+	bask.add_item(Bulk_quote("bk1", 2, 3, 2));
+	bask.add_item(Bulk_quote("bk1", 2, 3, 2));
+	bask.add_item(Bulk_quote("bk1", 2, 3, 2));
+
+	auto sum = bask.total_receipt(cout);
+
+	cout << sum << endl;
 
 	return 0;
 }

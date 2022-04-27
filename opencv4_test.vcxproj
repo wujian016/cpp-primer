@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Basker.cpp" />
     <ClCompile Include="HasPtr.cpp" />
     <ClCompile Include="Message.cpp" />
     <ClCompile Include="opencv4_test.cpp" />
@@ -156,6 +157,7 @@
     <ClCompile Include="Window_mgr.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Basker.h" />
     <ClInclude Include="HasPtr.h" />
     <ClInclude Include="IntCompare.h" />
     <ClInclude Include="make_plural.h" />
