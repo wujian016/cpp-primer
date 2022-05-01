@@ -11,7 +11,7 @@ Query::Query(const std::string& s) : q(new WordQuery(s)) {
 Query operator~(const Query& operand) {
 	return std::shared_ptr<Query_base>(new NotQuery(operand));
 }
-//inline 
+inline 
 Query operator&(const Query& lhs, const Query& rhs) {
 	return std::shared_ptr<Query_base>(new AndQuery(lhs, rhs));
 }
