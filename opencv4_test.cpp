@@ -39,6 +39,7 @@
 #include "SmallInt.h"
 #include "Quote.h"
 #include "Basker.h"
+#include "Query.h"
 
 using namespace std;
 
@@ -157,30 +158,16 @@ void PassQuote(Bulk_quote bq) {
 }
 
 int main(int argc, char* argv[])
-{
-	//vector<shared_ptr<Quote>> vec;
-	//vec.push_back(make_shared<Quote>("bk3", 20));
-	//vec.push_back(make_shared<Bulk_quote>("bk2", 22, 33, 44));
-	//vec.push_back(make_shared<Bulk_quote>("bk1", 2, 3, 4));
+{ 
 
-	//cout << vec.back()->net_price(15) << endl;
-	//cout << bq.net_price(15) << endl;
+	Query q = Query("fiery") & Query("bird") | Query("wind");
+	 
+	ifstream in(argv[1]);
+	TextQuery file(in);
 
-	Basker bask;
-	Quote bk3("bk3", 20);
-	Bulk_quote bk2("bk2", 2, 3, 2);
-	bask.add_item(bk2);
-	bask.add_item(bk2);
-	bask.add_item(bk2);
-	bask.add_item(bk2);
-	bask.add_item(bk3);
-	bask.add_item(Bulk_quote("bk1", 2, 3, 2));
-	bask.add_item(Bulk_quote("bk1", 2, 3, 2));
-	bask.add_item(Bulk_quote("bk1", 2, 3, 2));
+	auto result = q.eval(file);
 
-	auto sum = bask.total_receipt(cout);
-
-	cout << sum << endl;
+	print(cout, result);
 
 	return 0;
 }

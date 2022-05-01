@@ -147,6 +147,7 @@
     <ClCompile Include="Message.cpp" />
     <ClCompile Include="opencv4_test.cpp" />
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Query.cpp" />
     <ClCompile Include="Quote.cpp" />
     <ClCompile Include="Sales_data.cpp" />
     <ClCompile Include="Screen.cpp" />
@@ -164,6 +165,7 @@
     <ClInclude Include="Message.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="PrintString.h" />
+    <ClInclude Include="Query.h" />
     <ClInclude Include="Quote.h" />
     <ClInclude Include="ReadString.h" />
     <ClInclude Include="Sales_data.h" />

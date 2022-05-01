@@ -32,7 +32,13 @@ private:
 class QueryResult {
 	friend ostream& print(ostream&, const QueryResult&);
 public:
+	//typedef std::vector<std::string>::size_type line_no;
+	typedef std::set<line_no>::const_iterator line_it;
 	QueryResult(string s, shared_ptr<set<line_no>> p, shared_ptr<vector<string>> f) : sought(s), lines(p), file(f) {}
+	std::set<line_no>::size_type size() const { return lines->size(); }
+	line_it begin() const { return lines->cbegin(); }
+	line_it end() const { return lines->cend(); }
+	std::shared_ptr<std::vector<std::string>> get_file() { return file; }
 private:
 	string sought;
 	shared_ptr<set<line_no>> lines;
